@@ -4,10 +4,14 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #add8e6;
+	font-family: "Nerko One", cursive;
+}
+
 .container {
 	width: 800px;
 	margin: auto;
-	background: #999;
 }
 
 /* header */
@@ -16,7 +20,7 @@ header {
 	text-align: center;
 	padding: 35px 0 50px;
 	text-transform: uppercase;
-	font-size: 45px;
+	font-size: 80px;
 	color: white;
 	text-shadow: 2px 2px #000;
 }
@@ -24,72 +28,112 @@ header {
 /* cards */
 
 main {
-	height: 800px;
 	background-color: #f2f2;
-}
-
-.card-container {
-	position: relative;
+	margin-bottom: ;
 }
 
 .card {
+	width: 22.5%;
+	height: 205px;
+	background-color: #fff;
+	float: left;
+	margin-right: 3.333%;
+	margin-bottom: 35px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card:nth-child(4n) {
+	margin-right: 0;
+}
+
+.card.back {
+	position: relative;
+	background-image: url(../img/pattern.png);
+	background-size: 100%;
+	border-radius: 10px;
+}
+
+.card.back.six {
+	position: relative;
+	background-image: url(../img/noun_air_balloon_3134741.png);
+	background-size: 80% 65%;
+	background-position: 50% 25%;
+	background-repeat: no-repeat;
+	padding: 155px 20px 20px;
+	font-size: 30px;
+	text-align: center;
+	color: #e41b86;
+	text-shadow: 2px 2px #000;
+	border-radius: 10px;
+}
+
+.card.front {
 	position: absolute;
-	display: inline-block;
-	width: 23%;
-	height: 210px;
-	background-color: blue;
-	margin-right: 2%;
-}
-
-.card.two {
 	top: 0;
-	left: 25.67%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.3s ease;
+	background-size: 80% 65%;
+	background-position: 50% 25%;
+	background-repeat: no-repeat;
+	padding: 155px 20px 20px;
+	font-size: 30px;
+	text-align: center;
+	color: #e41b86;
+	text-shadow: 2px 2px #000;
+	border-radius: 10px;
 }
 
-.card.three {
-	top: 0;
-	left: 51.34%;
+.card.front.one,
+.card.front.five {
+	background-image: url(../img/noun_Bicycle_3134821.png);
+	color: #e67919;
 }
 
-.card.four {
-	top: 0;
-	left: 77.01%;
+.card.front.two,
+.card.front.eleven {
+	background-image: url(../img/noun_Cruise_Ship_3134824.png);
+	color: #0394fc;
 }
 
-.card.five {
-	top: 245px;
+.card.front.three,
+.card.front.eight {
+	background-image: url(../img/noun_Submarine_3134738.png);
+	color: #6bfc03;
 }
 
-.card.six {
-	top: 245px;
-	left: 25.67%;
+.card.front.four,
+.card.front.six {
+	background-image: url(../img/noun_air_balloon_3134741.png);
 }
 
-.card.seven {
-	top: 245px;
-	left: 51.34%;
+.card.front.seven,
+.card.front.nine {
+	background-image: url(../img/noun_Tram_3134750.png);
+	color: #c203fc;
 }
 
-.card.eight {
-	top: 245px;
-	left: 77.1%;
+.card.front.ten,
+.card.front.twelve {
+	background-image: url(../img/noun_Tractor_3134797.png);
+	color: #fcf403;
 }
 
-.card.nine {
-	top: 490px;
+.card.back:hover .card.front {
+	opacity: 1;
 }
 
-.card.ten {
-	top: 490px;
-	left: 25.67%;
+.card.back:hover .card.front.six {
+	opacity: 0;
 }
 
-.card.eleven {
-	top: 490px;
-	left: 51.34%;
-}
-
-.card.twelve {
-	top: 490px;
-	left: 77.01%;
+/* footer */
+footer {
+	margin: auto;
+	text-align: center;
+	font-size: 20px;
 }
