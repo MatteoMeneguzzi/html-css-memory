@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+	background: #999;
+}
+
+/* header */
+
+header {
+	text-align: center;
+	padding: 35px 0 50px;
+	text-transform: uppercase;
+	font-size: 45px;
+	color: white;
+	text-shadow: 2px 2px #000;
+}
+
+/* cards */
+
+main {
+	height: 800px;
+	background-color: #f2f2;
+}
+
+.card-container {
+	position: relative;
+}
+
+.card {
+	position: absolute;
+	display: inline-block;
+	width: 23%;
+	height: 210px;
+	background-color: blue;
+	margin-right: 2%;
+}
+
+.card.two {
+	top: 0;
+	left: 25.67%;
+}
+
+.card.three {
+	top: 0;
+	left: 51.34%;
+}
+
+.card.four {
+	top: 0;
+	left: 77.01%;
+}
+
+.card.five {
+	top: 245px;
+}
+
+.card.six {
+	top: 245px;
+	left: 25.67%;
+}
+
+.card.seven {
+	top: 245px;
+	left: 51.34%;
+}
+
+.card.eight {
+	top: 245px;
+	left: 77.1%;
+}
+
+.card.nine {
+	top: 490px;
+}
+
+.card.ten {
+	top: 490px;
+	left: 25.67%;
+}
+
+.card.eleven {
+	top: 490px;
+	left: 51.34%;
+}
+
+.card.twelve {
+	top: 490px;
+	left: 77.01%;
+}
